@@ -34,6 +34,8 @@
       <send-icon-img />
     </div>
 
+   <slot name='extra'></slot>
+
     <div id="length-indicator" v-if="maxlength">
       <span
         :style="{ color: actualContentLength > maxlength ? 'red' : 'black' }"
